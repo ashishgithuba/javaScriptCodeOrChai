@@ -11,15 +11,15 @@
 //     console.log(message); // Works!
 //   }
   
-//  //console.log(message); // ❌ Error (outside the function)
-//   greet();
+ //console.log(message); // ❌ Error (outside the function)
+  greet();
 //Block Scope
-// {
-//     let age = 20;
-//     console.log(age); // Works!
-//   }
+{
+    let age = 20;
+    console.log(age); // Works!
+  }
   
- // console.log(age); // ❌ Error (outside the block)
+ console.log(age); // ❌ Error (outside the block)
  function outer() {
     let outerName = "Ashish";
   

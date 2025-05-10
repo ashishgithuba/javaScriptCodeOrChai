@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Chai aur Code</title>
+</head>
+<body style="background-color: #212121; color: aqua;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+
+    <script>
+        const parent = document.querySelector('.parent');
+        console.log("Parent:", parent);
+
+        // List all child elements
+        console.log("Children:", parent.children);
+        console.log("Second child innerHTML:", parent.children[1].innerHTML);
+
+        // Change style of second child
+        parent.children[1].style.color = "orange";
+
+        // Loop through all children and log content
+        for (let i = 0; i < parent.children.length; i++) {
+            console.log(`Child ${i + 1}:`, parent.children[i].innerHTML);
+        }
+
+        // Select first day element
+        const dayOne = document.querySelector('.day');
+        console.log("Selected (dayOne):", dayOne);
+        console.log("Parent of dayOne:", dayOne.parentElement);
+        console.log("Next sibling of dayOne:", dayOne.nextElementSibling);
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.button {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  #grey { background-color: grey; }
+  #white { background-color: white; border: 2px solid #ccc; }
+  #blue { background-color: blue; }
+  #yellow { background-color: yellow; }
+  #purple { background-color: purple; }
+  
+  body {
+    transition: background-color 0.3s ease;
+  }
+  

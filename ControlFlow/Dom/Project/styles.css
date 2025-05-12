@@ -2,7 +2,7 @@
     height: 50px;
     width: 50px;
     display: inline-block;
-    border: 2px solid black;
+    border: 2px solid rgb(236, 152, 152);
     margin: 10px;
     border-radius: 50%;
     cursor: pointer;

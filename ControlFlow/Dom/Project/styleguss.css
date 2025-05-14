@@ -1,0 +1,43 @@
+nav {
+    background-color: #b12861f1;
+    padding: 10px;
+}
+
+nav a {
+    color: rgb(201, 158, 19);
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+#wrapper {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e46f67;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ee9898;
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    padding: 8px 16px;
+    background-color: #5cb85c;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+.resultParas {
+    margin-top: 20px;
+}

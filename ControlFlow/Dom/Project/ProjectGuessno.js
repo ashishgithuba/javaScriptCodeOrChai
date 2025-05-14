@@ -40,6 +40,7 @@ submit.addEventListener('click', function (e) {
     userInput.focus();
 });
 
+
 function endGame() {
     userInput.disabled = true;
     submit.disabled = true;

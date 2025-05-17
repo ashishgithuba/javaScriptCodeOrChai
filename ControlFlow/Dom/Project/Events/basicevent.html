@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+    <style>
+        body {
+            background-color: #414141;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Amazing Image</h2>
+    <div>
+        <ul id="images">
+            <li>
+                <img
+                    width="200px"
+                    id="photoshop"
+                    src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt="Photoshop Example"
+                >
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        const image = document.getElementById("photoshop");
+
+        image.addEventListener("click", function () {
+            alert("You clicked the amazing image!");
+        });
+    </script>
+</body>
+</html>
+ 

@@ -1,4 +1,5 @@
 // Promise One
+
 const promiseOne = new Promise(function (resolve, reject) {
   setTimeout(function () {
     console.log('Async task is Complete');
@@ -11,6 +12,7 @@ promiseOne.then(function () {
 });
 
 // Promise Two
+
 new Promise(function (resolve, reject) {
   setTimeout(function () {
     console.log('Async task 2');
@@ -21,6 +23,7 @@ new Promise(function (resolve, reject) {
 });
 
 // Promise Three
+
 const promiseThree = new Promise(function (resolve, reject) {
   setTimeout(function () {
     resolve({ username: 'chai', email: 'ashish' });
@@ -32,6 +35,7 @@ promiseThree.then(function (user) {
 });
 
 // Promise Four
+
 const promiseFour = new Promise(function (resolve, reject) {
   setTimeout(function () {
     let error = true;

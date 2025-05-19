@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>API Example</title>
+  <style>
+    body {
+      background-color: #f0f8ff; /* Light blue background */
+      color: #333; /* Dark text color */
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      color: #2c3e50; /* Dark blue */
+    }
+
+    button {
+      background-color: #3498db; /* Blue button */
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2980b9; /* Darker blue on hover */
+    }
+
+    #joke {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>Random Joke</h1>
+  <button id="getJoke">Get Joke</button>
+  <p id="joke"></p>
+
+  <script>
+    document.getElementById('getJoke').addEventListener('click', function () {
+      fetch('https://official-joke-api.appspot.com/random_joke')
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById('joke').innerText = data.setup + ' - ' + data.punchline;
+        })
+        .catch(error => {
+          document.getElementById('joke').innerText = 'Error fetching joke';
+          console.log(error);
+        });
+    });
+  </script>
+</body>
+</html>

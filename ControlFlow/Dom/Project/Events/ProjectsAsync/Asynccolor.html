@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Async</title>
+</head>
+<body>
+    <h1>Start Should change the Background color Every Second</h1>
+    <button id="start">START</button>
+    <button id="stop">STOP</button>
+
+    <script>
+        let intervalId; // To store the interval ID
+
+        // Function to generate a random color
+        const getRandomColor = () => {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        };
+
+        // Start button: start changing background color every 1 second
+        document.querySelector('#start').addEventListener('click', function () {
+            if (!intervalId) { // Prevent multiple intervals
+                intervalId = setInterval(() => {
+                    document.body.style.backgroundColor = getRandomColor();
+                }, 1000); // 1000ms = 1 second
+            }
+        });
+
+        // Stop button: stop the background color change
+        document.querySelector('#stop').addEventListener('click', function () {
+            clearInterval(intervalId);
+            intervalId = null; // Reset the interval ID
+            console.log("STOPPED");
+        });
+    </script>
+</body>
+</html>

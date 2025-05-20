@@ -58,3 +58,20 @@ promiseFour
   .catch(function (error) {
     console.log(error);
   });
+const promiseFive=new Promise(function(resolve,reject){
+  setTimeout(function(){
+    let error=true
+    if(!error)
+    {
+      resolve({username:"javascript",password:"802312"})
+    }
+    else {
+      reject('ERROR:JS went wrong')
+    }
+  },1000)
+});
+//Async wait
+async function consumepromiseFive(){
+  const response=await promiseFive
+  console.log(respose);
+}

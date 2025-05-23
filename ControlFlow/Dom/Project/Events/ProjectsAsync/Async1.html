@@ -12,15 +12,19 @@
    
 
     <script>
+        
         // Function to change text
+        
         const changeText = function() {
             document.querySelector('h1').innerHTML = "Best JS Series";
         };
 
         // Set timeout and store the ID
+        
         const changedMe = setTimeout(changeText, 2000);
 
         // Stop button click
+        
         document.querySelector('#stop').addEventListener('click', function() {
             clearTimeout(changedMe);
             console.log("STOPPED");

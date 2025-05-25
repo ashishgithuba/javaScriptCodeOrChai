@@ -1,4 +1,4 @@
-
+//Async code
 // async function fetchUser() {
 //   try {
 //     const response = await fetch("https://jsonplaceholder.typicode.com/users/1");

@@ -4,7 +4,6 @@
 //     {
 //         console.log("Hello"+this.name);
 //     }
-
 // };
 // obj.greet();
 const obj = {

@@ -2,6 +2,7 @@ const myArray=[3,8,9,10,23]
 //console.log(myArray[4]);
 const myHero=['Ashish','Raj','ravi','Hrathik','Ajya']
 //console.log(myHero[4]);
+
 //myArray.push(6)//vale add in arrays
 //myArray.push(12)
 //myArray.pop()//Remove the last element
